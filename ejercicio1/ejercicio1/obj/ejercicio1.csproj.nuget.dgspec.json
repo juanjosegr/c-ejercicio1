@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juanj\\OneDrive\\Escritorio\\SegundoAño\\c#\\ejercicio1\\ejercicio1\\ejercicio1.csproj": {}
+    "C:\\Users\\juanj\\OneDrive\\Documents\\GitHub\\c-ejercicio1\\ejercicio1\\ejercicio1\\ejercicio1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juanj\\OneDrive\\Escritorio\\SegundoAño\\c#\\ejercicio1\\ejercicio1\\ejercicio1.csproj": {
+    "C:\\Users\\juanj\\OneDrive\\Documents\\GitHub\\c-ejercicio1\\ejercicio1\\ejercicio1\\ejercicio1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanj\\OneDrive\\Escritorio\\SegundoAño\\c#\\ejercicio1\\ejercicio1\\ejercicio1.csproj",
+        "projectUniqueName": "C:\\Users\\juanj\\OneDrive\\Documents\\GitHub\\c-ejercicio1\\ejercicio1\\ejercicio1\\ejercicio1.csproj",
         "projectName": "ejercicio1",
-        "projectPath": "C:\\Users\\juanj\\OneDrive\\Escritorio\\SegundoAño\\c#\\ejercicio1\\ejercicio1\\ejercicio1.csproj",
+        "projectPath": "C:\\Users\\juanj\\OneDrive\\Documents\\GitHub\\c-ejercicio1\\ejercicio1\\ejercicio1\\ejercicio1.csproj",
         "packagesPath": "C:\\Users\\juanj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juanj\\OneDrive\\Escritorio\\SegundoAño\\c#\\ejercicio1\\ejercicio1\\obj\\",
+        "outputPath": "C:\\Users\\juanj\\OneDrive\\Documents\\GitHub\\c-ejercicio1\\ejercicio1\\ejercicio1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\juanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
