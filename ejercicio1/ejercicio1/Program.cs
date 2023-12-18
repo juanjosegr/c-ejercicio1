@@ -98,7 +98,7 @@ class Punto: IGrafico
         X = x;
         Y = y;
     }
-    public bool mover(int x, int y)
+    public virtual bool mover(int x, int y)
     {
         if (EsValido(x, y))
         {
@@ -109,12 +109,12 @@ class Punto: IGrafico
         return false;
     }
 
-    public void dibujar()
+    public virtual void dibujar()
     {
         Console.WriteLine($"Punto en ({X}, {Y})");
     }
 
-    protected  bool EsValido (int x, int y)
+    protected  virtual bool EsValido (int x, int y)
     {
         return x >= 0 && x <= 800 && y >= 0 && y <= 600;
     }
@@ -122,14 +122,25 @@ class Punto: IGrafico
 
 class Circulo : Punto
 {
-    public int Radio { get; private set; }
+    private int _radio;
+    public int Radio
+    {
+        get
+        {
+            return _radio;
+        }
+        private set
+        {
+            if (value >= 0) _radio = value;
+        }
+    }
 
     public Circulo(int x, int y, int radio) : base(x, y)
     {
         Radio = radio;
     }
 
-    public new bool Mover(int x, int y)
+    public override bool mover(int x, int y)
     {
         if (base.EsValido(x, y))
         {
@@ -140,7 +151,7 @@ class Circulo : Punto
         return false;
     }
 
-    public new void Dibujar()
+    public override void dibujar()
     {
         Console.WriteLine($"Circulo en ({X}, {Y}) con radio {Radio}");
     }
@@ -156,7 +167,7 @@ class Rectangulo : Punto
         Alto = alto;
     }
 
-    public new bool Mover(int x, int y)
+    public override bool mover(int x, int y)
     {
         if (base.EsValido(x, y) && base.EsValido(x + Ancho, y + Alto))
         {
@@ -167,7 +178,7 @@ class Rectangulo : Punto
         return false;
     }
 
-    public new void Dibujar()
+    public override void dibujar()
     {
         Console.WriteLine($"Rectangulo en ({X}, {Y}) con ancho {Ancho} y alto {Alto}");
     }
